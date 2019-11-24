@@ -12,8 +12,15 @@
   </head>
   <body>
     <div id="root">
-        <button class="button" @click="showLoginModal=true">show modal</button>
-      <my-modal v-show="showLoginModal" @close="showLoginModal=false"></my-modal>
+      <button class="button" @click="showLoginModal=true">show Login modal</button>
+      <my-modal v-show="showLoginModal" @close="showLoginModal=false">
+        <h1>Login Form</h1>
+      </my-modal>
+
+      <button class="button" @click="showRegisterModal=true">show Register modal</button>
+      <my-modal v-show="showRegisterModal" @close="showRegisterModal=false">
+        <h1>Register Form</h1>
+      </my-modal>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="main.js"></script>

@@ -6,7 +6,7 @@ Vue.component("my-modal", {
           <!-- Any other Bulma elements you want -->
           <div class="box">
               <h3>
-                  this is modal body
+                  <slot></slot>
               </h3>
           </div>
         </div>
@@ -18,6 +18,7 @@ Vue.component("my-modal", {
 new Vue({
   el: '#root',
   data:{
-      showLoginModal: false
+      showLoginModal: false,
+      showRegisterModal: false,
   }
 });
