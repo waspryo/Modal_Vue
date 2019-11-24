@@ -11,7 +11,11 @@
     />
   </head>
   <body>
-      
+    <div id="root">
+        <button class="button" @click="showLoginModal=true">show modal</button>
+      <my-modal v-show="showLoginModal" @close="showLoginModal=false"></my-modal>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
